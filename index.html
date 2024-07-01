@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* background-image: url(hero-background1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat; */
+            background-color: #070e16;
+        }
+
+        .container-1 {
+            /* height: 100vh;
+            width: 100%;
+             border: 2px solid black; 
+            background-image: url(hero-background1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat; */
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            /* position: sticky; */
+            top: 0;
+        }
+
+        .logo img {
+            height: 70px;
+            padding-left: 40px;
+
+
+        }
+
+        .nav-bar {
+            margin: 20px;
+            margin-top: 10px;
+        }
+
+        .nav-bar ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .nav-bar ul li a {
+            text-decoration: none;
+            font-weight: 700;
+            color: white;
+        }
+
+        .nav-bar ul li a:hover {
+            color: red;
+        }
+
+        .container-2 {
+
+            color: white;
+            height: 100vh;
+            width: 100%;
+            background-image: url(hero-background1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* border: 2px solid white; */
+
+
+        }
+
+        .wraper {
+            padding-top: 150px;
+            padding-left: 40px;
+        }
+
+        .welcome {
+            font-size: 24px;
+
+
+        }
+
+        .welcome h1 {
+            margin: 0;
+            padding: 0;
+            padding-bottom: 20px;
+        }
+
+        .experience p {
+            font-size: 22px;
+            margin: 0;
+            padding: 0;
+
+            padding-bottom: 20px;
+        }
+
+        .menu-btn button {
+            height: 30px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .container-3 {
+            margin-top: 30px;
+            width: 100%;
+            display: flex;
+            height: 100vh;
+            color: white;
+        }
+
+        .about-image {
+            width: 50%;
+        }
+
+        .about-image img {
+            padding: 35px;
+            height: 60%;
+
+        }
+
+        .about-info {
+            align-items: center;
+            padding: 30px;
+            width: 50%;
+        }
+
+        .about-info p {
+            line-height: 1.3;
+            text-align: justify;
+        }
+        .container-4{
+            color: white;
+        }
+        .container-4 h1{
+            text-align: center;
+           
+        }
+
+        .menu-cart{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            margin: auto;
+        }
+
+        .box1{
+            width: 30%;
+            margin-left: 50px;
+
+        }
+
+        
+        #bur1{
+            background-image: url(burger1.jpg);
+            height: 300px;
+            width: 300px;
+            background-size: cover;
+            box-shadow: 1px 1px 2px black,-1px -1px 2px black;
+        }
+        #bur2{
+            background-image: url(burger2.jpg);
+            height: 300px;
+            width: 300px;
+            background-size: cover;
+            box-shadow: 1px 1px 2px black,-1px -1px 2px black;
+        }
+        #bur3{
+            background-image: url(burger3.jpg);
+            height: 300px;
+            width: 300px;
+            background-size: cover;
+            box-shadow: 1px 1px 2px black,-1px -1px 2px black;
+        }
+
+        .bur_info{
+            margin-top: 20px;
+        }
+        .bur_info p{
+            text-align: justify;
+        }
+        .container-5{
+            height: 100vh;
+            width: 100%;
+            color: white;
+        }
+        .reservation{
+            /* width: 50%; */
+            width: 540px;
+            height: 80vh;
+            margin: auto;
+            background-color: #333;
+            box-shadow: 1px 1px 20px black,-1px -1px 20px black;
+        }
+        .reservation h1{
+            text-align: center;
+            margin-top: 0px;
+    padding-top: 20px;
+        }
+        .in{
+            width: 70%;
+            height: 20px;
+            margin: auto;
+            margin: 10px;
+        }
+
+        .in1{
+            margin: auto;
+           display: flex;
+           justify-content: center;
+        }
+
+    .in1 button{
+        width: 70px;
+        height: 25px;
+        border: none;
+        background-color: red;
+        color: white;
+        border-radius: 3px;
+    }
+
+    .in1 textarea{
+        height: 60px;
+    }
+
+    .container-6{
+        color: white;
+        height: 100vh;
+    }
+
+    .container-6 h1{
+        text-align: center;
+    }
+
+    .customer1-photo{
+        height: 100px;
+        width: 100px;
+        border: 2px solid white;
+        border-radius: 50%;
+        margin: auto;
+    }
+    .customer1-photo img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+      
+    }
+    .customer-1{
+        width: 500px;
+        margin: auto;
+    }
+        
+
+    .container-7{
+        color: white;
+        height: 80vh;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .container-7 h1{
+        text-align: center;
+    }
+
+    .gallery{
+        height: 80vh;
+       
+      margin: auto;
+        margin-top: 10px;
+        display: flex;
+       width: 90%;
+        justify-content: space-evenly;
+        /* border: 2px solid white; */
+       
+    }
+
+    .gall-photo{
+            height: 300px;
+            width: 300px;
+            
+    }
+    .gall-photo img{
+            height: 250px;
+            width: 250px;
+    }
+     
+    .container-8{
+        color: white;
+        height: 100vh;
+        background-color: #333;
+        
+    }
+    .container-8 ul li{
+        display: inline;
+        margin-left: 15px;
+    }
+
+    .container-8 h1{
+        
+        text-align: center;
+    }
+
+    .container-8 ul {
+        text-align: center;
+    }
+
+    .combine{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+        
+    }
+
+    .con1{
+        width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+        
+    }
+    .con1 input{
+        width: 100%;
+        border-radius: 5px;
+        height: 1.5rem;
+    }
+
+    .con1 textarea{
+        width: 100%;
+        border-radius: 5px;
+       
+    }
+   
+    .wrap{
+        width: 60%;
+        margin: auto;
+        background-color: #333;
+    height: 80%;
+    margin-top: 82px
+    }
+
+
+    footer{
+        height: 50vh;
+        color: white;
+    }
+
+    .end-logo {
+        height: 100px;
+        width: 100px;
+        margin: auto;
+    }
+
+    .end-logo img{
+        height: 150px;
+        width: 150px;
+    }
+
+    .end-menu{
+        width: 80%;
+        margin: auto;
+        margin-top: 60px;
+    }
+
+    .end-menu ul{
+        margin-left: 220px;
+    }
+    .end-menu ul li {
+        display: inline;
+        text-decoration: none;
+        color: white;
+        margin-left: 20px;
+    }
+
+    .end-menu ul li a{
+        color: white;
+        text-decoration: none;
+       
+    }
+    
+    </style>
+</head>
+
+<body>
+    <div class="container-1">
+        <div class="logo"><img src="iconlogo.png" alt=""></div>
+        <div class="nav-bar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <div class="container-2">
+            <div class="wraper">
+                <div class="welcome">
+                    <h1>Welcome to Burger Hunt</h1>
+                </div>
+                <div class="experience">
+                    <p>Experience the Taste of Pefection</p>
+                </div>
+                <div class="menu-btn">
+                    <button>Explore Our Menu</button>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="container-3">
+            <div class="about-info">
+                <h1>About Burger Hunt</h1>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vel molestiae, rerum minus illum
+                    maxime nobis porro sint officia est ipsam. Suscipit ab vero amet iste aut quam impedit harum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati velit voluptas beatae odio quasi,
+                    amet nemo libero quisquam ipsum ea nostrum architecto corrupti iste reiciendis! Perferendis eum
+                    consectetur nobis corrupti. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam sapiente
+                    dolor possimus ab at est voluptate molestiae. Reprehenderit quae mollitia tempore eius dolore
+                    doloribus. Fuga consequuntur temporibus culpa nesciunt exercitationem Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Quas at neque accusamus aperiam numquam, animi eveniet magni est,
+                    necessitatibus quasi, iste voluptatibus expedita fugiat nesciunt! Repellendus, quis maiores. Iusto,
+                    amet!</p> -->
+                    <p>Experience the finest gourmet burgers in a cozy and rustic atmosphere. At Berger Hut, we are dedicated to delivering exceptional flavors that will tantalize your taste buds. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, velit officiis, aut nisi deleniti laboriosam, consequuntur excepturi itaque consectetur at repellat minima nobis dolores! Incidunt asperiores dolor recusandae quos nulla?</p>
+                    <p>Our chefs meticulously craft each burger using locally sourced ingredients and unique flavor combinations. From juicy beef patties to mouthwatering vegetarian options, there's something for everyone. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, explicabo sequi consectetur aliquam excepturi debitis, doloribus enim placeat quis, vitae blanditiis totam accusamus odit eaque quasi laborum vel rem distinctio.</p>
+                   
+                <div class="menu-btn">
+                    <button>Explore Our Menu</button>
+                </div>
+            </div>
+
+            <div class="about-image">
+                <img src="about-image.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="container-4">
+            <h1>Our Menu</h1>
+            <div class="menu-cart">
+                <div class="box1">
+
+                    <div class="img-bur" id="bur1"></div>
+                    <div class="bur_info">
+                        <h3>Classic Burger</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vel molestiae, rerum minus
+                            illum maxLorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vel molestiae, rerum minus
+                            illum max
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="box1">
+
+                    <div class="img-bur" id="bur2"></div>
+                    <div class="bur_info">
+                        <h3>Veggie Burger</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vel molestiae, rerum minus
+                            illum maxLorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vel molestiae, rerum minus
+                            illum max
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="box1">
+
+                    <div class="img-bur" id="bur3"></div>
+                    <div class="bur_info">
+                        <h3>Sppicy BBQ Burger</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vel molestiae, rerum minus
+                            illum maxLorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vel molestiae, rerum minus
+                            illum max
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="container-5">
+            <div class="reservation">
+                <h1>Make a Reservation</h1>
+                <div class="input">
+                    <div class="in1"><input class="in" type="text" placeholder="Your Name"></div>
+                    <div class="in1"><input class="in" type="email" placeholder="Your Email"></div>
+                    <div class="in1"><input class="in" type="tel" placeholder="Phone Number"></div>
+                    <div class="in1"><input class="in" type="date" placeholder="Date"></div>
+                    <div class="in1"><input class="in" type="time" placeholder="Time"></div>
+                    <div class="in1"><textarea class="in" placeholder="Additional Message"></textarea></div>
+                    <div class="in1"><button class="in">Submit</button></div>
+                   
+                    <!-- <input class="in" type="email" placeholder="Your Email">
+                    <br>
+                    <input class="in" type="tel" placeholder="Phone Number">
+                    <br>
+                    <input class="in" type="date" placeholder="Date">
+                    <br>
+                    <input class="in" type="time" placeholder="Time">
+                    <br>
+                    <textarea class="in" placeholder="Additional Message"></textarea>
+                    <br>
+                    <button class="in">Make Reservation</button> -->
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-6">
+            <h1>What Our Customers Say</h1>
+            <div class="reviews">
+                <div class="customer-1">
+                    <div class="customer1-photo">
+                        <img src="customer1.jpg">
+                    </div>
+                    <div class="customer1-review">
+                        <p>"The burgers at Berger Hut are simply amazing! The flavors are rich, and the ingredients are always fresh. It's my go-to place whenever I'm craving a delicious meal."</p>
+                        <h4>John Doe</h4>
+                    </div>
+                   
+                </div>
+
+                <div class="customer-1">
+                    <div class="customer1-photo">
+                        <img src="customer2.jpg">
+                    </div>
+                    <div class="customer1-review">
+                        <p>"Berger Hut never disappoints! The quality of their burgers and the friendly service make it a top-notch dining experience. I highly recommend it to all burger lovers!"</p>
+                        <h4>Jane Smith</h4>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="container-7">
+            <h1>Gallery</h1>
+            <div class="gallery">
+                <div class="gall-photo"><img src="gallery1.jpg" alt=""></div>
+                <div class="gall-photo"><img src="gallery2.jpg" alt=""></div>
+                <div class="gall-photo"><img src="gallery3.jpg" alt=""></div>
+                <div class="gall-photo"><img src="gallery4.jpg" alt=""></div>
+            </div>
+        </div>
+
+        <div class="container-8">
+                <div class="wrap">
+                    <h1>Contact Us</h1>
+                    <ul>
+                        <li>123 Main Street,City,Country</li>
+                        <li>+1 234 567 890</li>
+                        <li>info@bergerhunt.com</li>
+                    </ul>
+        
+                    <div class="combine">
+                        <div class="con1"><input class="con" type="text" placeholder="Your Name"> </div>
+                    <div class="con1"><input class="con" type="email" placeholder="Your Email"></div>
+                    <div class="con1"><textarea class="con" placeholder="Additional Message" rows="5" ></textarea></div>
+                    <div class="menu-btn  con1">
+                        <button>Send Message</button>
+                    </div>
+        
+                    </div>
+
+                </div>
+
+            <!-- <h1>Contact Us</h1>
+            <ul>
+                <li>123 Main Street,City,Country</li>
+                <li>+1 234 567 890</li>
+                <li>info@bergerhunt.com</li>
+            </ul>
+
+            <div class="combine">
+                <div class="con1"><input class="con" type="text" placeholder="Your Name"> </div>
+            <div class="con1"><input class="con" type="email" placeholder="Your Email"></div>
+            <div class="con1"><textarea class="con" placeholder="Additional Message" rows="5" ></textarea></div>
+            <div class="menu-btn  con1">
+                <button>Send Message</button>
+            </div>
+
+            </div> -->
+            
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="end-logo">
+            <img src="iconlogo.png" alt="logo">
+        </div>
+
+        <div class="end-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+    
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <p style="text-align: center; margin-top: 30px;">Copyright &copy; 2019 All rights reserved </p>
+        </div>
+       
+    </footer>
+
+</body>
+
+</html>
